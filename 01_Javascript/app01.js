@@ -1,6 +1,6 @@
 //declarando variáveis
 var curso = 'Javascript'; //visibilidade global
-let nome = 'Thais Santos Hello World!'; //visibilidade bloco
+let nome = 'Milena Semanaka Hello World!'; //visibilidade bloco
 let ch = 186;
 let st = true;
 let verifica = ch < 100;

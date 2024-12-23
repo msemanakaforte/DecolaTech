@@ -1,12 +1,12 @@
 // forma tradicional
-function calcularSoma(x,y) {
+function calcularSoma(x, y) {
     //x = parseFloat(x);
     //y = parseFloat(y);
 
-    if(typeof(x) != "number"){
+    if (typeof (x) != "number") {
         throw new Error("O parâmetro x deve ser numérico");
     }
-    if(typeof(y) != "number"){
+    if (typeof (y) != "number") {
         throw new Error("O parâmetro y deve ser numérico");
     }
 
@@ -14,8 +14,8 @@ function calcularSoma(x,y) {
 }
 
 // função anonima
-let maiorValor = function (x, y) { 
-    if(x > y) {
+let maiorValor = function (x, y) {
+    if (x > y) {
         return x;
     } else {
         return y;

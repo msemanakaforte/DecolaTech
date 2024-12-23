@@ -1,4 +1,4 @@
-module.exports = function(valorSalario) {
+module.exports = function (valorSalario) {
 
     const valores = [0, 2259.2, 2826.65, 3751.05, 4664.68];
     const taxas = [0, 7.5, 15, 22.5, 27.5];
@@ -6,8 +6,8 @@ module.exports = function(valorSalario) {
     let imposto = 0;
     let baseCalculo = valorSalario;
 
-    for(let i = valores.length - 1; i >= 0; i--) {
-        if(baseCalculo > valores[i]){
+    for (let i = valores.length - 1; i >= 0; i--) {
+        if (baseCalculo > valores[i]) {
             imposto = imposto + (baseCalculo - valores[i]) * taxas[i] / 100;
             baseCalculo = valores[i];
         }

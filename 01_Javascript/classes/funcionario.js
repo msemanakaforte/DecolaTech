@@ -3,8 +3,13 @@ class Funcionario {
 
     // função especial, executada no momento em que o objeto da classe é executado. 
     // Sua execução é implícita
-    constructor() {
-        this.atribuir('desconhecido', 18, 'desconhecido', 2000);
+    constructor(nome = 'Desconhecido', idade = 18, cargo = 'Desconhecido', salario = 2000) {
+
+        if (nome == undefined || idade == undefined || cargo == undefined || salario == undefined) {
+            throw new Error('Dados incorretos!');
+        }
+
+        this.atribuir(nome, idade, cargo, salario);
     }
 
     atribuir(nome, idade, cargo, salario) {

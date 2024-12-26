@@ -6,7 +6,7 @@ let listaCursos = dados.cursos;
 let novaLista = listaCursos.map((elemento, indice) => {
     return {
         chave: indice + 1,
-        curso: elemento.descricao,
+        curso: `${elemento.descricao} (${elemento.cargahoraria})`,
         ativo: elemento.status ? 'Sim' : 'Não'
     }
 });
